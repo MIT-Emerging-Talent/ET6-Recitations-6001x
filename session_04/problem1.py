@@ -36,15 +36,19 @@ Instructions:
 """
 #problem 1
 
-#def dotProduct(listA, listB):
+def dotProduct(listA, listB):
     '''
     listA: a list of numbers
     listB: a list of numbers of the same length as listA
     Returns: the sum of the pairwise products of listA and listB
     '''
     # Initialize the sum to 0
-
+    sum = 0
     # Traverse both lists using their indices
-
+    for item in range(len(listA)):
+        sum =sum + listA[item] * listB[item]
     # Multiply corresponding elements and add to sum
-   
+    return sum
+listA = [1, 2, 3]
+listB = [4, 5, 6]
+print(dotProduct(listA, listB))
